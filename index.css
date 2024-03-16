@@ -1,0 +1,81 @@
+* {
+padding: 0;
+margin:0;
+/* border: 0.5px solid red; */
+box-sizing: border-box;
+}
+body {
+    background-color: rgb(237, 240, 228);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+aside {
+    width:260px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: white;
+    padding:20px;
+    border-radius: 6px;
+}
+nav {
+    padding-top:20px;
+}
+nav a {
+    text-decoration:none;
+    color:#2e8b57;
+}
+a:hover {
+    font-weight:bold;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    padding:5px 0;
+}
+section {
+margin-left:300px;
+margin-top:20px;
+    overflow: scroll;
+}
+article {
+    background-color: white;
+    margin-bottom:20px;
+    padding:20px;
+    border-radius: 6px;
+}
+#title {
+  font-size:40px;
+  color:rgb(0, 114, 48);
+} 
+table {
+    margin-top:20px;
+    border-collapse: collapse;
+    border: 2px solid rgb(166, 166, 166);
+}
+th, td {
+    border: 1px solid rgb(205, 205, 205);
+    padding:14px;
+    }
+th {background-color:rgb(0, 114, 48);
+color:white;
+}
+.semantic {
+    border-collapse:separate;
+    border: 2px solid rgb(255, 148, 148);
+    padding: 5px;
+    }
+.semantic td {
+    margin:5px;
+}
+    .code, code, span, #cssselectors td:nth-child(-n+2) {
+        font-family: Courier, Monaco, monospace; 
+        color:rgb(0, 57, 190)
+    }
+footer {
+    padding:40px 10px;
+    border-top:1px solid grey;
+}
+.content {
+    margin-top:20px;
+}
