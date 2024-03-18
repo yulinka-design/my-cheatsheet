@@ -4,6 +4,12 @@ margin:0;
 /* border: 0.5px solid red; */
 box-sizing: border-box;
 }
+@font-face {
+    font-family: 'Spacemono';
+    src: url('../fonts/spacemono-bold-webfont.woff2') format('woff2'),
+         url('../fonts/spacemono-bold-webfont.woff') format('woff'),
+         url('../fonts/SpaceMono-Bold.ttf') format('truetype');
+  }
 body {
     background-color: rgb(237, 240, 228);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -11,18 +17,17 @@ body {
 aside {
     width:260px;
     position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 8px;
+    left: 8px;
     background-color: white;
     padding:20px;
     border-radius: 6px;
 }
-nav {
-    padding-top:20px;
-}
+h1, h2 { font-family: 'Spacemono', sans-serif;}
+
 nav a {
     text-decoration:none;
-    color:#2e8b57;
+    color:black;
 }
 a:hover {
     font-weight:bold;
@@ -34,22 +39,22 @@ li {
     padding:5px 0;
 }
 section {
-margin-left:300px;
-margin-top:20px;
-    overflow: scroll;
+margin: 8px 8px 8px 276px;
 }
 article {
     background-color: white;
-    margin-bottom:20px;
-    padding:20px;
+    margin-bottom:8px;
+    padding: 40px;
     border-radius: 6px;
+}
+.element {
+    margin-top:20px;
 }
 #title {
   font-size:40px;
-  color:rgb(0, 114, 48);
+  line-height: 0.8;
 } 
 table {
-    margin-top:20px;
     border-collapse: collapse;
     border: 2px solid rgb(166, 166, 166);
 }
@@ -68,14 +73,20 @@ color:white;
 .semantic td {
     margin:5px;
 }
-    .code, code, span, #cssselectors td:nth-child(-n+2) {
+.code, code, span, #cssselectors td:nth-child(-n+2) {
         font-family: Courier, Monaco, monospace; 
-        color:rgb(0, 57, 190)
+        color:rgb(0, 131, 46)
     }
 footer {
     padding:40px 10px;
     border-top:1px solid grey;
 }
-.content {
-    margin-top:20px;
+
+.embedcode {
+    background-color: rgb(239, 239, 239);
+    padding:20px;
+    margin: 20px 0;
+}
+ol {
+    list-style-position: inside;
 }
