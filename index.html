@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Cheat Sheet</title>
-    <link href="index.css" type="text/css" rel="stylesheet">
+    <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
 </head>
 <body>
     <!--Navbar section-->   
     <aside>
         <h1 id="title">Yulinka's<br>Cheat Sheet</h1>
-        <nav>
+        <nav class="element">
           <ul>
             <li><a href="#terminal">Terminal Commands</a></li>
             <li><a href="#commentoff">Comment off shortcut</a></li>
@@ -27,7 +27,7 @@
 
 <article id="terminal">
 <h2>Terminal commands</h2>
-<table>
+<table class="element">
     <thead>
         <tr>
             <th>Command</th>
@@ -73,7 +73,7 @@
      <!--Comment off Section-->
      <article id="commentoff">
         <h2>How to quickly comment a line of code with the keyboard shortcut</h2>
-        <div class="content">
+        <div class="element">
         <code>
             Command + /
         </code>
@@ -83,7 +83,7 @@
 
  <article id="semantic">
     <h2>HTML page structure with Semantic elements</h2>
-    <table class="semantic code">
+    <table class="semantic code element">
         <tbody>
             <tr>
                 <td colspan="2">&lt;header&gt;</td>
@@ -108,7 +108,7 @@
     <!--Table tags and attributes Section--> 
     <article id="table">
         <h2>Table tags</h2>
-        <table>
+        <table class="element">
           <thead>
           <tr>
             <th>Tag</th>
@@ -156,9 +156,9 @@
         </table>
         </div>
  
-        <div class="content">
+        <div class="element">
         <h2>Table attributes</h2>
-        <table>
+        <table class="element">
           <thead>
             <tr>
               <th>Attribute</th>
@@ -184,7 +184,7 @@
 <!--CSS Selectors Section--> 
     <article id="cssselectors">
         <h2>CSS Selectors</h2>
-        <table >
+        <table class="element">
             <thead>
             <tr>
             <th>Selector</th>
@@ -274,22 +274,28 @@
     <article id="embedfont">
         <h2>How to add embed font to my web-page</h2>
 
-        <ol>
-            <li>
-                <p>in stylesheets:</p>
+        <ol class="element">
+            <li>download font from Google fonts (ususally in .ttf format)</li>
+            <li>convert font to web-font <a href="https://www.fontsquirrel.com/tools/webfont-generator" target=”_blank”>font-generator</a></li>
+            <li>put generated fonts to the 'resources' folder of DevProject</li>
+            <li>in stylesheets in the beginning add:
+            <div class="embedcode">
             <code>
-                @font-face {
-                    font-family: 'Spacemono';
-                    src: url('../fonts/spacemono-bold-webfont.woff2') format('woff2'),
-                         url('../fonts/spacemono-bold-webfont.woff') format('woff'),
-                         url('../fonts/SpaceMono-Bold.ttf') format('truetype');
+                @font-face {<br>
+                    font-family: 'Spacemono';<br>
+                    src: url('../fonts/spacemono-bold-webfont.woff2') format('woff2'),<br>
+                         url('../fonts/spacemono-bold-webfont.woff') format('woff'),<br>
+                         url('../fonts/SpaceMono-Bold.ttf') format('truetype');<br>
                   }
-                </code>
-
+            </code>
+        </div>
         </li>
-        <li>
-
-        </li>
+        <li>to specify the font-family of the element we want to apply this font:</li>
+        <div class="embedcode">
+            <code>
+            font-family: 'Spacemono', sans-serif;
+            </code>
+        </div>
         </ol>
 
     </article>
