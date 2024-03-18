@@ -4,12 +4,6 @@ margin:0;
 /* border: 0.5px solid red; */
 box-sizing: border-box;
 }
-@font-face {
-    font-family: 'Spacemono';
-    src: url('../fonts/spacemono-bold-webfont.woff2') format('woff2'),
-         url('../fonts/spacemono-bold-webfont.woff') format('woff'),
-         url('../fonts/SpaceMono-Bold.ttf') format('truetype');
-  }
 body {
     background-color: rgb(237, 240, 228);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -23,7 +17,11 @@ aside {
     padding:20px;
     border-radius: 6px;
 }
-h1, h2 { font-family: 'Spacemono', sans-serif;}
+h1, h2 { 
+ font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
 
 nav a {
     text-decoration:none;
