@@ -10,7 +10,8 @@
     <!--Navbar section-->   
     <aside>
         <h1 id="title">Yulinka's<br>Cheat Sheet</h1>
-        <nav class="element">
+       
+        <nav class="element sidebar">
           <ul>
             <li><a href="#terminal">Terminal Commands</a></li>
             <li><a href="#commentoff">Comment off shortcut</a></li>
@@ -20,8 +21,12 @@
             <li><a href="#embedfont">Embed Font</a></li>
             <li><a href="#startcode">Code to start with</a></li>
             <li><a href="#links">Links stylization</a></li>
+            <li><a href="#sidebarscroll">Scrollable Sidebar</a></li>
+
+
           </ul>
         </nav>
+     
     </aside>
 
     <section>
@@ -372,11 +377,39 @@
       </table>
       </div>
   </article>
+<!--Code to start with-->
 
+<article id="sidebarscroll">
+  <h2>Scrollable sidebar</h2>
 
+  <ol class="element">
+
+  <li>css</li>
+  <div class="embedcode">
+      <code>
+        .sidebar {<br>
+          max-height: calc(100vh - 15rem);<br>
+          overflow-y: auto;<br>
+          }
+      </code>
+  </div>
+  <li>Scroll bars stylization.</li>
+  <div class="embedcode">
+    <code>
+::-webkit-scrollbar {  width: 10px;}  <br>
+::-webkit-scrollbar-track {  background: #f1f1f1; }  <br>
+::-webkit-scrollbar-thumb {  background: #888; }  <br>
+::-webkit-scrollbar-thumb:hover {  background: #555; }
+    </code>
+</div>
+  </ol>
+
+</article>
+  <footer>
+    <p>made by Yulia Terentyeva</p>
+</footer>
     </section>
-    <footer>
-        <p>made by Yulia Terentyeva</p>
-    </footer>
-</body>
+ 
+
+  </body>
 </html>
